@@ -89,11 +89,8 @@
 
 - (void)changeMSelectedState
 {
-    if (((UITableView *)self.superview).isEditing)
-    {
-        _mSelected = !_mSelected;
-        [self setNeedsLayout];
-    }
+    _mSelected = !_mSelected;
+    [self setNeedsLayout];
 }
 
 
